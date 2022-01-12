@@ -1,0 +1,65 @@
+/* gfonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eb0d7c;
+}
+.wrapper{
+    user-select: none;
+}
+.wrapper .time{
+    height: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+    padding: 10px;
+}
+.wrapper .time span{
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #333;
+}
+.time span.colon{
+    width: 10px;
+}
+.time span.ms-colon,
+.time span.milisecond{
+    color: #eb0d7c;
+}
+.wrapper .buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+.buttons button{
+    padding: 8px 23px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: #a00150;
+    background: #fff;
+    font-size: 19px;
+    border-radius: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(34, 29, 29, 3);
+}
+.buttons button.active,
+.buttons button.stopActive{
+    pointer-events: none;
+  opacity: 0.7;
+}
